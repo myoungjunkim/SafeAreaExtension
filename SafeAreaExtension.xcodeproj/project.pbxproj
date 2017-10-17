@@ -10,6 +10,7 @@
 		691515D81F95D12900FDA3C5 /* SafeAreaExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691515CE1F95D12900FDA3C5 /* SafeAreaExtension.framework */; };
 		691515DD1F95D12900FDA3C5 /* SafeAreaExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691515DC1F95D12900FDA3C5 /* SafeAreaExtensionTests.swift */; };
 		691515DF1F95D12900FDA3C5 /* SafeAreaExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 691515D11F95D12900FDA3C5 /* SafeAreaExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		691515E91F95D1CA00FDA3C5 /* SafeAreaExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691515E81F95D1CA00FDA3C5 /* SafeAreaExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		691515D71F95D12900FDA3C5 /* SafeAreaExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafeAreaExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		691515DC1F95D12900FDA3C5 /* SafeAreaExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaExtensionTests.swift; sourceTree = "<group>"; };
 		691515DE1F95D12900FDA3C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		691515E81F95D1CA00FDA3C5 /* SafeAreaExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				691515D11F95D12900FDA3C5 /* SafeAreaExtension.h */,
 				691515D21F95D12900FDA3C5 /* Info.plist */,
+				691515E81F95D1CA00FDA3C5 /* SafeAreaExtension.swift */,
 			);
 			path = SafeAreaExtension;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					691515CD1F95D12900FDA3C5 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					691515D61F95D12900FDA3C5 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691515E91F95D1CA00FDA3C5 /* SafeAreaExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		691515E31F95D12900FDA3C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kr.swifter.SafeAreaExtension;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +361,7 @@
 		691515E41F95D12900FDA3C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +382,7 @@
 		691515E61F95D12900FDA3C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SafeAreaExtensionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +396,7 @@
 		691515E71F95D12900FDA3C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SafeAreaExtensionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
